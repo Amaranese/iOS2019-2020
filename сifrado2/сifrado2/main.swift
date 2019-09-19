@@ -90,7 +90,7 @@ func cifrar(){
             passCifrada.append("27")
         }
     }
-    if contraseña == "Esternocleomastoideo"{
+    if contraseña == "Supercalifragilisticoespiadiloso"{
         print(passCifrada)
     }
 }
