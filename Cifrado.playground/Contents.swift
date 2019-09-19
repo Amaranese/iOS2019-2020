@@ -1,5 +1,8 @@
 import Foundation
 var passCifrada = ""
+
+
+
 func cifrar(){
     print("Introduzca la contraseña: ")
     let contraseña = readLine()!

@@ -1,12 +1,3 @@
-//
-//  ViewController.swift
-//  Cifrado4
-//
-//  Created by Alejandro Marañés on 19/09/2019.
-//  Copyright © 2019 Alejandro Marañés. All rights reserved.
-//
-
-import UIKit
 import Foundation
 var passCifrada = ""
 func cifrar(){
