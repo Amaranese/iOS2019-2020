@@ -6,7 +6,6 @@ func cifrar(){
     for i in contraseña{
         if i != "a" && i != "b" && i != "c" && i != "d" && i != "e" && i != "f" && i != "g" && i != "h" && i != "i" && i != "j" && i != "k" && i != "l" && i != "m" && i != "n" && i != "ñ" && i != "o" && i != "p" && i != "q" && i != "r" && i != "s" && i != "t" && i != "u" && i != "v" && i != "w" && i != "x" && i != "y" && i != "z" {
             passCifrada.append(i)
-            
         }
         if i == "a"{
             passCifrada.append("1")
