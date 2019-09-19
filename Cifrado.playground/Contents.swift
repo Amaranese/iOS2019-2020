@@ -1,8 +1,6 @@
 import Foundation
+import UIKit
 var passCifrada = ""
-
-
-
 func cifrar(){
     print("Introduzca la contraseña: ")
     let contraseña = readLine()!
@@ -93,7 +91,7 @@ func cifrar(){
             passCifrada.append("27")
         }
     }
-    if contraseña == "Esternocleomastoideo"{
+    if contraseña == "Hola"{
         print(passCifrada)
     }
 }
