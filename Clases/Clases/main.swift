@@ -8,7 +8,7 @@
 
 import Foundation
 
-let Ferrari = Coche(marca:"BMW", ruedas: 4, max: 350)
+let Ferrari = Coche(marca:"Ferrari", ruedas: 4, max: 350)
 Ferrari.velocidad = 300
 print(Ferrari.info())
 

@@ -20,6 +20,6 @@ class Coche {
         velocidad = 0
     }
     func info() -> String {
-        return "\(marca) con \(ruedas) ruedas van a \(velocidad) km/h"
+        return "\(marca) con \(ruedas) ruedas va a \(velocidad) km/h"
     }
 }
