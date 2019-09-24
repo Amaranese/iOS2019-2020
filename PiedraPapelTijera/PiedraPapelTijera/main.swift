@@ -8,5 +8,8 @@
 
 import Foundation
 
-print("Hello, World!")
+var piedra 
+var papel
+var tijera
+
 
