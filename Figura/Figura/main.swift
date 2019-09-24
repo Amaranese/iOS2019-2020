@@ -43,12 +43,12 @@ class Circulo: Figura {
         area = Float.pi * pow(radio, 2)
     }
 }
-class Triangulo: Figura{
+class Triangulo: Figura {
     public let lado:Float
     init(lado:Float){
         if lado < 0 {
             self.lado = 1
-        }else{
+        } else {
             self.lado = lado
         }
         super.init()
