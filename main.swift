@@ -30,5 +30,27 @@ func crecer(persona: (String, Int)) -> (String, Int) {
     return (nombre, edad)
 }
 
-print(crecer(persona: ("Pepe", 20)))
+
+enum Estado {
+    case quieto
+    case disparando
+    case andando
+}
+
+var estado: Estado = Estado.quieto // En Java: Estado estado = Estado.quieto
+print(estado)
+if estado == Estado.quieto {
+    estado = Estado.disparando
+}
+
+var personas = [Int: Persona]()
+personas[1234] = Persona(nombre: "Jose Luis", edad: 20)
+personas[3333] = Persona(nombre: "Josa", edad: 40)
+personas[2222] = Persona(nombre: "Sr Pepito", edad: 53)
+
+for (dni, persona) in personas {
+    print(dni, persona.nombre, persona.edad)
+}
+
+
 
