@@ -1,56 +1,21 @@
 
 import Foundation
 
-func saludo() {
-    print("Hola!!")
-}
+let seat = Coche(color: "Rojo", marca: "SEAT", ruedas: 4, max: 200)
+print(seat.info())
+seat.velocidad = 300
+print(seat.info())
+seat.velocidad = 100
+print(seat.info())
 
-func saludo(nombre: String) {
-    print("Hola", nombre)
-}
+let vehiculos = [Coche(color: "Rojo", marca: "BMW", ruedas: 4, max: 300), Bici(color: "Azul"), Bici(color: "Gris"), Coche(color: "Negro", marca: "Ferrari", ruedas: 4, max: 400)]
 
-func multiplicacion(num1: Float, num2: Float) -> Float {
-    return num1 * num2
-}
-
-func sumatorio(numeros: Int...) -> Int {
-    var total = 0
-    for numero in numeros {
-        total += numero
+for vehiculo in vehiculos {
+    if let coche = vehiculo as? Coche { // ¿Es este vehiculo un coche?
+        print(coche.info())
+    } else {
+        print("Una bici", vehiculo.color)
     }
-    /*for i in 0...numeros.count-1 {
-        total += numeros[i]
-    }*/
-    return total
+    
 }
-
-func crecer(persona: (String, Int)) -> (String, Int) {
-    let nombre = persona.0 + " viejo"
-    let edad = persona.1 + 1
-    return (nombre, edad)
-}
-
-
-enum Estado {
-    case quieto
-    case disparando
-    case andando
-}
-
-var estado: Estado = Estado.quieto // En Java: Estado estado = Estado.quieto
-print(estado)
-if estado == Estado.quieto {
-    estado = Estado.disparando
-}
-
-var personas = [Int: Persona]()
-personas[1234] = Persona(nombre: "Jose Luis", edad: 20)
-personas[3333] = Persona(nombre: "Josa", edad: 40)
-personas[2222] = Persona(nombre: "Sr Pepito", edad: 53)
-
-for (dni, persona) in personas {
-    print(dni, persona.nombre, persona.edad)
-}
-
-
 
