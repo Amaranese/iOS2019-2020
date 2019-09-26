@@ -40,6 +40,43 @@ extension Int {
         if let cadena = especiales[numero * factor] {
             return cadena
         }
+        if numero <= 3 {
+            if let uno = especiales[(1 * factor)] {
+                var cadena = ""
+                for _ in 0..<numero {
+                    cadena += uno
+                }
+                return cadena
+            }
+        }
+        else if numero >= 5 {
+            return convertir(numero: 5, factor: factor) + convertir(numero: numero - 5, factor: factor)
+        }
+        return "Por implementar"
+    }
+}
+let uno = 1.romano
+let dos = 2.romano
+let tres = 3.romano
+let cuatro = 4.romano
+let cinco = 5.romano
+let seis = 6.romano
+let siete = 7.romano
+let ocho = 8.romano
+let nueve = 9.romano
+let diez = 10.romano
+let once = 11.romano
+let doce = 12.romano
+let trece = 13.romano
+let catorce = 14.romano
+let quince = 15.romano
+
+let quinceArray = quince.map {
+    String($0)
+}
+
+
+
 
 
 
