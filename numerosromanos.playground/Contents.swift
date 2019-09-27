@@ -75,7 +75,14 @@ let diciocho = 18.romano
 let diecinueve = 19.romano
 let veinte = 20.romano
 let veintidos = 22.romano
-
+let veintitres = 23.romano
+let veinticuatro = 24.romano
+let veinticinco = 25.romano
+let veintiseis = 26.romano
+let veintisiete = 27.romano
+let veintiocho = 28.romano
+let veintinueve = 29.romano
+let treinta = 30.romano
 
 
 
