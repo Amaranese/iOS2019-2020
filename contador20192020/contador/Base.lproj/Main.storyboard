@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="contador" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="699-vO-QjI">
+                                <rect key="frame" x="16" y="335" width="378" height="30"/>
+                                <color key="backgroundColor" red="0.10484147952057465" green="1" blue="0.00074388167699923624" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Incrementando"/>
+                                <connections>
+                                    <action selector="sumar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pdU-iU-IJf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="                                      Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3i-t4-ROf">
+                                <rect key="frame" x="16" y="129.66666666666666" width="378" height="20.333333333333343"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.89014852887667839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gan-Ci-ahT">
+                                <rect key="frame" x="16" y="297" width="378" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Desincrementar">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="restar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RZI-lj-cOP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KpJ-KQ-FVS">
+                                <rect key="frame" x="16" y="259" width="378" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Multiplicar ">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="multiplicar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UEZ-uB-OAM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwN-oC-wdj">
+                                <rect key="frame" x="16" y="221" width="378" height="30"/>
+                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Dividir">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="dividir:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CE7-HG-WgE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gan-Ci-ahT" secondAttribute="trailing" constant="20" id="1eC-1e-uxI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gan-Ci-ahT" secondAttribute="trailing" constant="20" id="2fR-KV-mJY"/>
+                            <constraint firstItem="KpJ-KQ-FVS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="5Er-IW-Qcs"/>
+                            <constraint firstItem="h3i-t4-ROf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="6PI-Aw-Jsh"/>
+                            <constraint firstItem="699-vO-QjI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="6nM-GF-Yaf"/>
+                            <constraint firstItem="gan-Ci-ahT" firstAttribute="top" secondItem="KpJ-KQ-FVS" secondAttribute="bottom" constant="8" id="BK4-Sx-JhG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KpJ-KQ-FVS" secondAttribute="trailing" constant="20" id="GgT-YG-Ph0"/>
+                            <constraint firstItem="h3i-t4-ROf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="109.67" id="GhZ-3E-Sxt"/>
+                            <constraint firstItem="bwN-oC-wdj" firstAttribute="top" secondItem="h3i-t4-ROf" secondAttribute="bottom" constant="71" id="L94-L2-e2T"/>
+                            <constraint firstItem="699-vO-QjI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Lpw-K3-2rB"/>
+                            <constraint firstItem="699-vO-QjI" firstAttribute="top" secondItem="gan-Ci-ahT" secondAttribute="bottom" constant="8" id="MfB-FV-RWV"/>
+                            <constraint firstItem="699-vO-QjI" firstAttribute="top" secondItem="h3i-t4-ROf" secondAttribute="bottom" constant="185" id="PIL-al-oWK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gan-Ci-ahT" secondAttribute="trailing" constant="20" id="Qpd-eg-KKB"/>
+                            <constraint firstItem="gan-Ci-ahT" firstAttribute="top" secondItem="KpJ-KQ-FVS" secondAttribute="bottom" constant="8" id="RUO-hp-WKb"/>
+                            <constraint firstItem="gan-Ci-ahT" firstAttribute="top" secondItem="KpJ-KQ-FVS" secondAttribute="bottom" constant="8" id="TP4-yG-s0E"/>
+                            <constraint firstItem="bwN-oC-wdj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="UA6-55-AY4"/>
+                            <constraint firstItem="gan-Ci-ahT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="297" id="Ult-oh-cVJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bwN-oC-wdj" secondAttribute="trailing" constant="20" id="Xlr-4C-phw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h3i-t4-ROf" secondAttribute="trailing" constant="20" id="YEn-Qo-74j"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="699-vO-QjI" secondAttribute="trailing" constant="20" id="YZF-5E-hAR"/>
+                            <constraint firstItem="699-vO-QjI" firstAttribute="top" secondItem="h3i-t4-ROf" secondAttribute="bottom" constant="185" id="beW-iB-pyw"/>
+                            <constraint firstItem="699-vO-QjI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="bow-m1-ucH"/>
+                            <constraint firstItem="699-vO-QjI" firstAttribute="top" secondItem="gan-Ci-ahT" secondAttribute="bottom" constant="8" id="cK6-6F-Oh7"/>
+                            <constraint firstItem="gan-Ci-ahT" firstAttribute="trailing" secondItem="699-vO-QjI" secondAttribute="trailing" id="e1U-4V-TRx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="699-vO-QjI" secondAttribute="trailing" constant="20" id="eUm-3f-Ika"/>
+                            <constraint firstItem="KpJ-KQ-FVS" firstAttribute="top" secondItem="h3i-t4-ROf" secondAttribute="bottom" constant="109" id="gxy-YJ-Of3"/>
+                            <constraint firstItem="699-vO-QjI" firstAttribute="top" secondItem="gan-Ci-ahT" secondAttribute="bottom" constant="8" symbolic="YES" id="hIa-9U-SpR"/>
+                            <constraint firstItem="KpJ-KQ-FVS" firstAttribute="top" secondItem="bwN-oC-wdj" secondAttribute="bottom" constant="8" id="hdN-OK-krz"/>
+                            <constraint firstItem="KpJ-KQ-FVS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="jtf-n5-oPD"/>
+                            <constraint firstItem="699-vO-QjI" firstAttribute="top" secondItem="gan-Ci-ahT" secondAttribute="bottom" constant="8" id="rQ9-CQ-gpT"/>
+                            <constraint firstItem="gan-Ci-ahT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="s51-He-JnH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="699-vO-QjI" secondAttribute="trailing" constant="20" id="u90-gF-Hj6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KpJ-KQ-FVS" secondAttribute="trailing" constant="20" id="vta-8i-1uK"/>
+                            <constraint firstItem="gan-Ci-ahT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="yVk-eM-Aw9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="contado" destination="h3i-t4-ROf" id="Yue-nz-LP1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.39130434782609" y="118.20652173913044"/>
+        </scene>
+    </scenes>
+</document>
