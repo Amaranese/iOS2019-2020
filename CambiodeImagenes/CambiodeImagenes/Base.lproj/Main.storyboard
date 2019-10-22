@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="23c-K3-unV">
-                                <rect key="frame" x="75" y="196" width="225" height="275.5"/>
+                                <rect key="frame" x="75" y="176" width="225" height="295.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aQ6-6M-L35">
                                         <rect key="frame" x="0.0" y="0.0" width="225" height="75"/>
@@ -53,6 +51,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="FRr-dY-s35"/>
                                                     <constraint firstAttribute="height" constant="75" id="VXj-Hy-Gfw"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="75" id="xgt-je-NUa"/>
                                                 </constraints>
                                                 <state key="normal" title="Button" image="Vyacheslav_Molotov_Anefo2"/>
                                                 <connections>
@@ -78,7 +77,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="1zS-g7-3OL"/>
-                                                    <constraint firstAttribute="width" constant="75" id="Tl4-7P-9QZ"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="Tl4-7P-9QZ"/>
                                                     <constraint firstAttribute="height" constant="75" id="os8-6q-JyF"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="75" id="sMl-7j-ldS"/>
                                                 </constraints>
@@ -91,7 +90,7 @@
                                                 <rect key="frame" x="75" y="0.0" width="75" height="75"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="75" id="QN8-5t-LYA"/>
-                                                    <constraint firstAttribute="width" constant="75" id="Xgs-F3-F0h"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="Xgs-F3-F0h"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="fkh-rV-aOT"/>
                                                 </constraints>
                                                 <state key="normal" title="Button" image="500px-Alexander_Kerensky_LOC_24416"/>
@@ -102,6 +101,8 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VwH-bQ-gCP">
                                                 <rect key="frame" x="150" y="0.0" width="75" height="75"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="75" id="DdF-2I-R9f"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="MHR-UP-vmh"/>
                                                     <constraint firstAttribute="height" constant="75" id="hR3-Bb-Wmw"/>
                                                 </constraints>
                                                 <state key="normal" title="Button" image="440px-Bundesarchiv_Bild_183-71043-0003,_Wladimir_Iljitsch_Lenin"/>
@@ -131,7 +132,7 @@
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QUB-Fg-y8k">
                                                 <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="75" id="64V-EQ-Ydt"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="64V-EQ-Ydt"/>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="75" id="A9o-fX-GIi"/>
                                                     <constraint firstAttribute="height" constant="75" id="NSk-sH-nxR"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="hIj-SX-FeZ"/>
@@ -144,7 +145,7 @@
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nUc-yo-ErY">
                                                 <rect key="frame" x="75" y="0.0" width="75" height="75"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="75" id="Eeg-Dc-W2i"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="Eeg-Dc-W2i"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="ZDT-Qa-Gfg"/>
                                                     <constraint firstAttribute="height" constant="75" id="m0h-Vz-25l"/>
                                                 </constraints>
@@ -156,6 +157,8 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2L3-wz-RNZ">
                                                 <rect key="frame" x="150" y="0.0" width="75" height="75"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="QVB-mM-6Eh"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="75" id="bet-bo-afo"/>
                                                     <constraint firstAttribute="height" constant="75" id="kUN-T1-W8M"/>
                                                 </constraints>
                                                 <state key="normal" title="Button" image="440px-Bundesarchiv_Bild_183-71043-0003,_Wladimir_Iljitsch_Lenin"/>
@@ -178,7 +181,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ce3-NJ-yIa">
-                                        <rect key="frame" x="0.0" y="245.5" width="225" height="30"/>
+                                        <rect key="frame" x="0.0" y="245.5" width="225" height="50"/>
                                         <state key="normal" title="Start"/>
                                         <connections>
                                             <action selector="time:" destination="BYZ-38-t0r" eventType="touchUpInside" id="waH-5k-DtE"/>
